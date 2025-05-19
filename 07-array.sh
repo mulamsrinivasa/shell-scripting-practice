@@ -2,6 +2,6 @@
 
 Heroes=("Mahesh Babu" "Jr.NTR" "Prabhas")
 
-echo "First_Hero=${Heroes[0]}"
-echo "Second_Hero=${Heroes[1]}"
-echo "Third_Hero=${Heroes[2]}"
+echo "First Hero = ${Heroes[0]}"
+echo "Second Hero = ${Heroes[1]}"
+echo "Third Hero = ${Heroes[2]}"
