@@ -1,7 +1,6 @@
 #!/bin/bash
 
 UserID=$(id -u)
-PKG="mysql"
 
 if [ $UserID -ne 0 ]
 then
