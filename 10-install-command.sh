@@ -5,7 +5,6 @@ UserID=$(id -u)
 if [ $UserID -ne 0 ]
 then
     echo "SUGGESTION: You're a Normal user. Please install the package as root user"
-    exit 1
 else
     echo "You're a root user, proceeding further"
 fi
