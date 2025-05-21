@@ -1,8 +1,8 @@
 #!/bin/bash
 
-UID=$(id -u)
+UserID=$(id -u)
 
-if [ $UID -ne 0 ]
+if [ $UserID -ne 0 ]
 then
     echo "ERROR: Please install the package as root user"
 else
