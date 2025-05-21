@@ -1,7 +1,7 @@
 #!/bin/bash
 
 UserID=$(id -u)
-PKG="mysql"
+PKG=mysql
 
 if [ $UserID -ne 0 ]
 then
@@ -12,7 +12,7 @@ else
 fi
 
 echo "Checking if the $PKG package is installed or not"
-dnf list installed mysql
+dnf list installed $PKG
 
 if [ $? -eq 0 ]
 then
@@ -20,8 +20,6 @@ then
     exit 0
 else
     echo "The $PKG package is not installed, proceeding to install it now."
-    dnf install mysql -y
+    dnf install $PKG -y
     echo "The $PKG package is now installed, good luck."
 fi
-
-# # dnf install mysql -y
